@@ -1,5 +1,5 @@
 import React from "react";
-import building from "../../../Assets/Home/Hero/building.svg";
+import building from "../../../assets/Home/Hero/building.svg";
 
 export default function Hero() {
   return (
