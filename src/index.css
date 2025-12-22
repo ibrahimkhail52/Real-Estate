@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global black theme */
+body {
+  @apply bg-black text-white;
+}
+/* Defines a normal 0deg -> 360deg rotation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Defines a reverse 0deg -> -360deg rotation */
+@keyframes reverse-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+
+/* Assign the keyframes to your utility class names */
+.half-spin-slow {
+  animation: spin 6s linear infinite; /* Clockwise rotation */
+}
+
+.half-spin-fast {
+  animation: spin 3s linear infinite;
+}
+
+.reverse-spin {
+  animation-name: reverse-spin; /* Overwrites the 'spin' animation name with the reverse one */
+}
+
+.full-circle-spin {
+  animation: spin 10s linear infinite; /* Very slow clockwise rotation */
+}
+
