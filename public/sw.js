@@ -1,5 +1,5 @@
 const CACHE_NAME = "portfolio-cache-v1";
-const urlsToCache = ["/", "/index.html", "/icon.png"];
+const urlsToCache = ["/", "/index.html", "/Logo.svg", "/index.css"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
